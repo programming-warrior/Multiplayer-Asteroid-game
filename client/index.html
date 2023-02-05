@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplayer Asteroid game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styel.css">
+</head>
+<body> 
+    <div id="display-screen">
+        <h1>Multiplayer Asteroid Game</h1>
+        <form >
+             <input type="text" id="code-input" name="name" autocomplete="off" required></input>
+             <label for="name" id="label-input"><span id="content-name" >Room</span></label>
+         </form>
+        <button id="join-btn"  class="button-52" type="submit">Join room</button>
+        <span id="span">OR</span>
+        <button id="create-btn" class="button-52" type="submit">Create room</button>
+        <input id="room-code-info" autocomplete="off"></input>
+    </div>
+    <div class="container">
+        <canvas id="canvas"></canvas>
+    </div>
+    <script src="https://cdn.socket.io/4.4.1/socket.io.min.js" integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
