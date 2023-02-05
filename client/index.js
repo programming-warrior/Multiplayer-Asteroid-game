@@ -13,9 +13,10 @@ const context=canvas.getContext('2d');
 let playerNum; 
 let room;
 
-console.log('hello');
+// console.log('hello');
 
-const socket=io('http://localhost:8000');
+//establishing connection with the backend
+const socket=io('https://multiplayer-asteroid-game-programming.onrender.com/');
 
 socket.on('connect',()=>{
     console.log('connected');
